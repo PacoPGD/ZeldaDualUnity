@@ -3,6 +3,7 @@ using System.Collections;
 
 public class movimientoJugador : MonoBehaviour {
 
+	public int jugador=0;
 
 	// Use this for initialization
 	void Start () 
@@ -18,7 +19,6 @@ public class movimientoJugador : MonoBehaviour {
 
 	void movimiento()
 	{
-
 		float movimientoHorizontal = Input.GetAxis ("Horizontal");
 		float movimientoVertical = Input.GetAxis ("Vertical");
 
