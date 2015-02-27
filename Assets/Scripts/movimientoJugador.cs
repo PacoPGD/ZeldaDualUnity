@@ -3,12 +3,17 @@ using System.Collections;
 
 public class movimientoJugador : MonoBehaviour {
 
-	public int jugador=0;
+	public int jugador;
+	private Animator anim;
+	private int facing;
+	private bool moving;
 
 	// Use this for initialization
-	void Start () 
-	{
-	
+	void Start () {
+
+		anim = this.GetComponent<Animator>();
+		moving = false;
+		facing = 2;
 	}
 	
 	// Update is called once per frame
@@ -22,6 +27,14 @@ public class movimientoJugador : MonoBehaviour {
 		float movimientoHorizontal = Input.GetAxis ("Horizontal");
 		float movimientoVertical = Input.GetAxis ("Vertical");
 
+		//codigo para la animacion
+		moving = movimientoHorizontal != 0 || movimientoVertical != 0;
+		if (moving) {
+			if (movimientoVertical > 0) facing = 8;
+			else if (movimientoVertical < 0)facing = 2;
+			else if (movimientoHorizontal > 0) facing = 6;
+			else facing = 4;
+		}
 
 		float velocidad = 10;
 	
@@ -30,5 +43,7 @@ public class movimientoJugador : MonoBehaviour {
 
 		rigidbody2D.velocity = new Vector2 (movimientoHorizontal * velocidad, movimientoVertical * velocidad);
 
+		anim.SetBool("moving",moving);
+		anim.SetInteger ("facing", facing);
 	}
 }
