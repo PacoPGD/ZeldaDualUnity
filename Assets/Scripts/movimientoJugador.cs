@@ -18,12 +18,17 @@ public class movimientoJugador : MonoBehaviour {
 
 	void movimiento()
 	{
+
 		float movimientoHorizontal = Input.GetAxis ("Horizontal");
 		float movimientoVertical = Input.GetAxis ("Vertical");
 
-		if(movimientoHorizontal==1 && movimientoVertical ==1)
-			rigidbody2D.velocity = new Vector2 (movimientoHorizontal * 7.07, movimientoVertical * 7.07);
-		else
-			rigidbody2D.velocity = new Vector2 (movimientoHorizontal * 10, movimientoVertical * 10);
+
+		float velocidad = 10;
+	
+		if (movimientoHorizontal != 0 && movimientoVertical != 0)
+			velocidad = Mathf.Sqrt(Mathf.Pow(velocidad,2)*2)/2;
+
+		rigidbody2D.velocity = new Vector2 (movimientoHorizontal * velocidad, movimientoVertical * velocidad);
+
 	}
 }
