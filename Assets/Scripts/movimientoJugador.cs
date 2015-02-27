@@ -24,8 +24,17 @@ public class movimientoJugador : MonoBehaviour {
 
 	void movimiento()
 	{
-		float movimientoHorizontal = Input.GetAxis ("Horizontal");
-		float movimientoVertical = Input.GetAxis ("Vertical");
+		float movimientoHorizontal;
+		float movimientoVertical;
+
+		if (jugador == 1) {
+			movimientoHorizontal = Input.GetAxis ("Horizontal1");
+			movimientoVertical = Input.GetAxis ("Vertical1");
+		} 
+		else {
+			movimientoHorizontal = Input.GetAxis ("Horizontal2");
+			movimientoVertical = Input.GetAxis ("Vertical2");
+		}
 
 		//codigo para la animacion
 		moving = movimientoHorizontal != 0 || movimientoVertical != 0;
