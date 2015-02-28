@@ -1,0 +1,597 @@
+fileFormatVersion: 2
+guid: f0442d92a3c69644eb957f1adb7ca50f
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: linkRojo_0
+    21300002: linkRojo_1
+    21300004: linkRojo_2
+    21300006: linkRojo_3
+    21300008: linkRojo_4
+    21300010: linkRojo_5
+    21300012: linkRojo_6
+    21300014: linkRojo_7
+    21300016: linkRojo_8
+    21300018: linkRojo_9
+    21300020: linkRojo_10
+    21300022: linkRojo_11
+    21300024: linkRojo_12
+    21300026: linkRojo_13
+    21300028: linkRojo_14
+    21300030: linkRojo_15
+    21300032: linkRojo_16
+    21300034: linkRojo_17
+    21300036: linkRojo_18
+    21300038: linkRojo_19
+    21300040: linkRojo_20
+    21300042: linkRojo_21
+    21300044: linkRojo_22
+    21300046: linkRojo_23
+    21300048: linkRojo_24
+    21300050: linkRojo_25
+    21300052: linkRojo_26
+    21300054: linkRojo_27
+    21300056: linkRojo_28
+    21300058: linkRojo_29
+    21300060: linkRojo_30
+    21300062: linkRojo_31
+    21300064: linkRojo_32
+    21300066: linkRojo_33
+    21300068: linkRojo_34
+    21300070: linkRojo_35
+    21300072: linkRojo_36
+    21300074: linkRojo_37
+    21300076: linkRojo_38
+    21300078: linkRojo_39
+    21300080: linkRojo_40
+    21300082: linkRojo_41
+    21300084: linkRojo_42
+    21300086: linkRojo_43
+    21300088: linkRojo_44
+    21300090: linkRojo_45
+    21300092: linkRojo_46
+    21300094: linkRojo_47
+    21300096: linkRojo_48
+    21300098: linkRojo_49
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: linkRojo_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 909
+        width: 92
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_1
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 909
+        width: 91
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_2
+      rect:
+        serializedVersion: 2
+        x: 249
+        y: 909
+        width: 93
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_3
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 779
+        width: 87
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_4
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 779
+        width: 87
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_5
+      rect:
+        serializedVersion: 2
+        x: 258
+        y: 779
+        width: 88
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_6
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 649
+        width: 93
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_7
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 519
+        width: 88
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_8
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 519
+        width: 86
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_9
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 519
+        width: 88
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_10
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 389
+        width: 93
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_11
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 399
+        width: 92
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_12
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 389
+        width: 92
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_13
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 389
+        width: 92
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_14
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 389
+        width: 93
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_15
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 389
+        width: 93
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_16
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 399
+        width: 92
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_17
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 389
+        width: 92
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_18
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 389
+        width: 92
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_19
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 389
+        width: 93
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_20
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 259
+        width: 117
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_21
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 264
+        width: 96
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_22
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 274
+        width: 98
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_23
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 264
+        width: 97
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_24
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 264
+        width: 102
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_25
+      rect:
+        serializedVersion: 2
+        x: 604
+        y: 259
+        width: 117
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_26
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 259
+        width: 96
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_27
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 269
+        width: 93
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_28
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 269
+        width: 96
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_29
+      rect:
+        serializedVersion: 2
+        x: 1089
+        y: 264
+        width: 102
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_30
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 139
+        width: 93
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_31
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 139
+        width: 92
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_32
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 139
+        width: 92
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_33
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 139
+        width: 92
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_34
+      rect:
+        serializedVersion: 2
+        x: 494
+        y: 139
+        width: 93
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_35
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 139
+        width: 93
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_36
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 139
+        width: 92
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_37
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 139
+        width: 92
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_38
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 134
+        width: 92
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_39
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 139
+        width: 93
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_40
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 4
+        width: 102
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_41
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 4
+        width: 97
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_42
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 4
+        width: 97
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_43
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 0
+        width: 97
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_44
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 0
+        width: 117
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_45
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 4
+        width: 102
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_46
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 4
+        width: 96
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_47
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 13
+        width: 98
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_48
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 4
+        width: 97
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: linkRojo_49
+      rect:
+        serializedVersion: 2
+        x: 1079
+        y: 0
+        width: 117
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
