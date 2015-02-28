@@ -1,9 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class jugador : actor {
+public class Jugador : Actor {
 
 	public int nJugador;
+
+	public void Update(){
+		base.Update ();
+	}
 
 	public override float[]  movimiento (){
 		float [] move = new float[2];
@@ -20,14 +24,12 @@ public class jugador : actor {
 		
 		float velocidad = 10;
 		
-		if (move[0] != 0 && move[1] != 0)
-			velocidad = Mathf.Sqrt(Mathf.Pow(velocidad,2)*2)/2;
-		
+		if (move [0] != 0 && move [1] != 0) 
+			velocidad = Mathf.Sqrt (Mathf.Pow (velocidad, 2) * 2) / 2;
+			
 		rigidbody2D.velocity = new Vector2 (move[0] * velocidad, move[1] * velocidad);
 		
 		return move;
 	}
-
-
 
 }
