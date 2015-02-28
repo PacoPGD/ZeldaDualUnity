@@ -18,7 +18,7 @@ public abstract class Actor : MonoBehaviour {
 	public void Update () 
 	{
 		animacionMovimiento(movimiento ());
-		transform.position = new Vector3(transform.position.x, transform.position.y, transform.position.y);
+		transform.position = new Vector3 (transform.position.x, transform.position.y, transform.position.y/100000);
 	}
 
 	public abstract float[]  movimiento ();
@@ -51,6 +51,6 @@ public abstract class Actor : MonoBehaviour {
 	}
 	
 	public void setY(float y){
-		transform.position = new Vector3(transform.position.x, y, transform.position.y);
+		transform.position = new Vector3(transform.position.x, y, y);
 	}
 }

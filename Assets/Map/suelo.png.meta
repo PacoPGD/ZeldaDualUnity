@@ -45,23 +45,13 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: arbol_superior
+    - name: 
       rect:
         serializedVersion: 2
-        x: 416
-        y: 131
-        width: 64
-        height: 29
-      alignment: 0
-      pivot: {x: .5, y: .5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-    - name: arbol_inferior
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 81
-        width: 64
-        height: 50
+        x: 417
+        y: 80
+        width: 63
+        height: 79
       alignment: 0
       pivot: {x: .5, y: .5}
       border: {x: 0, y: 0, z: 0, w: 0}

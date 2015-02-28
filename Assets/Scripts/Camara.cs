@@ -15,9 +15,9 @@ public class Camara : MonoBehaviour {
 	}
 
 	public void seguimiento(){
-
+		setX ((jugador1.getX()+jugador2.getX ())/2);
+		setY ((jugador1.getY()+jugador2.getY())/2);
 	}
-
 
 	public float getX(){
 		return transform.position.x;
@@ -28,10 +28,10 @@ public class Camara : MonoBehaviour {
 	}
 	
 	public void setX(float x){
-		transform.position = new Vector3(x, transform.position.y, transform.position.y);
+		transform.position = new Vector3(x, transform.position.y, transform.position.z);
 	}
 	
 	public void setY(float y){
-		transform.position = new Vector3(transform.position.x, y, transform.position.y);
+		transform.position = new Vector3(transform.position.x, y, transform.position.z);
 	}
 }
