@@ -22,7 +22,7 @@ public class Jugador : Actor {
 			move[1] = Input.GetAxis ("Vertical2");
 		}
 		
-		float velocidad = 10;
+		float velocidad = 5;
 		
 		if (move [0] != 0 && move [1] != 0) 
 			velocidad = Mathf.Sqrt (Mathf.Pow (velocidad, 2) * 2) / 2;

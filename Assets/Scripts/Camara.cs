@@ -12,12 +12,16 @@ public class Camara : MonoBehaviour {
 
 	public void Update(){
 		seguimiento ();
+
 	}
 
 	public void seguimiento(){
-		setX ((jugador1.getX()+jugador2.getX ())/2);
+		setX ((jugador1.getX()+jugador2.getX())/2);
 		setY ((jugador1.getY()+jugador2.getY())/2);
 	}
+
+
+
 
 	public float getX(){
 		return transform.position.x;
