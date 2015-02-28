@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Objeto : MonoBehaviour {
+public class Perspectiva : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {

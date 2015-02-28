@@ -4,11 +4,7 @@ using System.Collections;
 public class Jugador : Actor {
 
 	public int nJugador;
-
-	public void Update(){
-		base.Update ();
-	}
-
+	
 	public override float[]  movimiento (){
 		float [] move = new float[2];
 		
