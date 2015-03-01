@@ -3,21 +3,24 @@ using System.Collections;
 
 public abstract class Actor : MonoBehaviour {
 
-	private Animator anim;
-	private int facing;
-	private bool moving;
+	protected Animator anim;
+	protected int facing;
+	protected bool moving;
+	protected float[] movimientoHecho;
 	
 	// Use this for initialization
 	public void Start () {
 		anim = this.GetComponent<Animator>();
 		moving = false;
 		facing = 2;
+		movimientoHecho = new float[2];
 	}
 	
 	// Update is called once per frame
 	public void Update () 
 	{
-		animacionMovimiento(movimiento ());
+		movimiento ();
+		animacionMovimiento();
 
 		//Linea equivalente el script perspectiva.
 		transform.position = new Vector3 (transform.position.x, transform.position.y, transform.position.y/100000);
@@ -26,16 +29,16 @@ public abstract class Actor : MonoBehaviour {
 	//Devuelve una array de 2 floats. Con valors mayores, menores o iguales que 0.(generalmente -1,0 o 1)
 	//En la posicion 0, movimiento horizontal, en la posicion 1 movimiento vertical.
 	//Ademas, el metodo debe realizar el movimiento.
-	public abstract float[]  movimiento ();
+	public abstract void movimiento ();
 
 
-	public void animacionMovimiento(float [] move){
+	public void animacionMovimiento(){
 		//codigo para la animacion
-		moving = move[0] != 0 || move[1] != 0;
+		moving = movimientoHecho[0] != 0 || movimientoHecho[1] != 0;
 		if (moving) {
-			if (move[1] > 0) facing = 8;
-			else if (move[1] < 0)facing = 2;
-			else if (move[0] > 0) facing = 6;
+			if (movimientoHecho[1] > 0) facing = 8;
+			else if (movimientoHecho[1] < 0)facing = 2;
+			else if (movimientoHecho[0] > 0) facing = 6;
 			else facing = 4;
 		}
 		

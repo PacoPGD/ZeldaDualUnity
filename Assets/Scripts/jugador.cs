@@ -5,7 +5,7 @@ public class Jugador : Actor {
 
 	public int nJugador;
 	
-	public override float[]  movimiento (){
+	public override void  movimiento (){
 		float [] move = new float[2];
 		
 		
@@ -24,8 +24,8 @@ public class Jugador : Actor {
 			velocidad = Mathf.Sqrt (Mathf.Pow (velocidad, 2) * 2) / 2;
 			
 		rigidbody2D.velocity = new Vector2 (move[0] * velocidad, move[1] * velocidad);
-		
-		return move;
+
+		movimientoHecho = move;
 	}
 
 }
