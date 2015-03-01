@@ -18,9 +18,14 @@ public abstract class Actor : MonoBehaviour {
 	public void Update () 
 	{
 		animacionMovimiento(movimiento ());
+
+		//Linea equivalente el script perspectiva.
 		transform.position = new Vector3 (transform.position.x, transform.position.y, transform.position.y/100000);
 	}
 
+	//Devuelve una array de 2 floats. Con valors mayores, menores o iguales que 0.(generalmente -1,0 o 1)
+	//En la posicion 0, movimiento horizontal, en la posicion 1 movimiento vertical.
+	//Ademas, el metodo debe realizar el movimiento.
 	public abstract float[]  movimiento ();
 
 
