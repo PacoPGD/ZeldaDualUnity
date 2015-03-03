@@ -7,6 +7,7 @@ public abstract class Actor : MonoBehaviour {
 	protected int facing;
 	protected bool moving;
 	protected float[] movimientoHecho;
+	protected float maxVelocity;
 	
 	// Use this for initialization
 	public void Start () {
@@ -14,6 +15,7 @@ public abstract class Actor : MonoBehaviour {
 		moving = false;
 		facing = 2;
 		movimientoHecho = new float[2];
+		maxVelocity = 6;
 	}
 	
 	// Update is called once per frame
@@ -24,6 +26,13 @@ public abstract class Actor : MonoBehaviour {
 
 		//Linea equivalente el script perspectiva.
 		transform.position = new Vector3 (transform.position.x, transform.position.y, transform.position.y/100000);
+
+		//El rigidbody de todos los actores tiene ahora una velocidad maxima controlada por el atributo privado maxVelocity.
+		//Basicamente si su velocidad en cualquier momento supera maxVelocity, la velocidad se iguala a maxVelocity.
+		//Esto crea una velocidad diagonal mas normal, pero podria darnos problemas si queremos darle un movimiento muy rapido de repente a un actor.
+		if (rigidbody2D.velocity.magnitude > maxVelocity) {
+			rigidbody2D.velocity = rigidbody2D.velocity.normalized * maxVelocity;
+		}
 	}
 
 	//Devuelve una array de 2 floats. Con valors mayores, menores o iguales que 0.(generalmente -1,0 o 1)

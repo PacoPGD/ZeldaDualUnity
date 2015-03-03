@@ -43,6 +43,7 @@ public class Enemigo : Actor {
 		float [] move = {0,0}; //Por defecto no se mueve.
 		float actualX = getX ();
 		float actualY = getY ();
+		float speed = velocidad; //Utilizo una variable local en lugar de la global para poder modificar el valor sin alterar el original.
 
 		//Si el enemigo llega a la posicion de destino, cambio una por otra las posiciones de origen y destino.
 		//De esta forma, el enemigo siempre esta patrullando en una direccion u otra.
@@ -77,11 +78,11 @@ public class Enemigo : Actor {
 			move[1] = -1;
 		}
 
-		//Ajuste de velocidad diagonal NO FUNCIONA.
+		//Ajuste de velocidad diagonal.
 		//if (move [0] != 0 && move [1] != 0) 
-		//	velocidad = Mathf.Sqrt (Mathf.Pow (velocidad, 2) * 2) / 2;
+		//	speed = Mathf.Sqrt (Mathf.Pow (velocidad, 2) * 2) / 2;
 		
-		rigidbody2D.velocity = new Vector2 (move[0] * velocidad, move[1] * velocidad); //Realizo el movimiento
+		rigidbody2D.velocity = new Vector2 (move[0] * speed, move[1] * speed); //Realizo el movimiento
 
 		movimientoHecho = move;
 	}
