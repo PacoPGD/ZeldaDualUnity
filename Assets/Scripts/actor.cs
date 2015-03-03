@@ -30,8 +30,8 @@ public abstract class Actor : MonoBehaviour {
 		//El rigidbody de todos los actores tiene ahora una velocidad maxima controlada por el atributo privado maxVelocity.
 		//Basicamente si su velocidad en cualquier momento supera maxVelocity, la velocidad se iguala a maxVelocity.
 		//Esto crea una velocidad diagonal mas normal, pero podria darnos problemas si queremos darle un movimiento muy rapido de repente a un actor.
-		if (rigidbody2D.velocity.magnitude > maxVelocity) {
-			rigidbody2D.velocity = rigidbody2D.velocity.normalized * maxVelocity;
+		if (GetComponent<Rigidbody2D>().velocity.magnitude > maxVelocity) {
+			GetComponent<Rigidbody2D>().velocity = GetComponent<Rigidbody2D>().velocity.normalized * maxVelocity;
 		}
 	}
 

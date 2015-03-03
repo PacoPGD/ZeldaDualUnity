@@ -32,7 +32,7 @@ public class Jugador : Actor {
 		//if (move [0] != 0 && move [1] != 0) 
 		//	speed = Mathf.Sqrt (Mathf.Pow (speed, 2) * 2) / 2;
 			
-		rigidbody2D.velocity = new Vector2 (move[0] * speed, move[1] * speed);
+		GetComponent<Rigidbody2D>().velocity = new Vector2 (move[0] * speed, move[1] * speed);
 
 		movimientoHecho = move;
 	}

@@ -82,7 +82,7 @@ public class Enemigo : Actor {
 		//if (move [0] != 0 && move [1] != 0) 
 		//	speed = Mathf.Sqrt (Mathf.Pow (velocidad, 2) * 2) / 2;
 		
-		rigidbody2D.velocity = new Vector2 (move[0] * speed, move[1] * speed); //Realizo el movimiento
+		GetComponent<Rigidbody2D>().velocity = new Vector2 (move[0] * speed, move[1] * speed); //Realizo el movimiento
 
 		movimientoHecho = move;
 	}
