@@ -3,11 +3,16 @@ using System.Collections;
 
 public class Jugador : Actor {
 
-	Texture2D [] corazon;
-
 	public int nJugador;
-	private int corazones = 20;
+
+
+	Texture2D [] corazon;
+	private int corazones = 3;
 	private int vidaCorazon = 20;
+
+	Texture2D rupia;
+	private static int rupias = 0;
+	private static int rupiasMax = 99;
 
 	public void Start () {
 		base.Start ();
@@ -15,18 +20,7 @@ public class Jugador : Actor {
 		vida = vidaMax;
 		cargaImagenes ();
 	}
-
-	/*Funcion que carga todas las imagenes que se necesitaran en la clase de jugador, como pueden ser los corazones
-	 * para la vida o el contador de rupias*/
-	public void cargaImagenes(){
-		corazon = new Texture2D[5];
-		corazon[0] = (Texture2D)Resources.Load("corazon/corazonlleno");
-		corazon[1] = (Texture2D)Resources.Load("corazon/corazon34");
-		corazon[2] = (Texture2D)Resources.Load("corazon/corazonmedio");
-		corazon[3] = (Texture2D)Resources.Load("corazon/corazoncuarto");
-		corazon[4] = (Texture2D)Resources.Load("corazon/corazonvacio");
-	}
-
+	
 	public void Update() {
 		base.Update ();
 	}
@@ -53,8 +47,11 @@ public class Jugador : Actor {
 		return move;
 	}
 
+
+	/*FUNCIONES DE PINTADO*/
 	void OnGUI(){
 		pintaCorazones();
+		pintaRupias();
 	}
 
 	/*Funcion que pinta todos los corazones los cuales representan la vida del jugador*/
@@ -105,5 +102,32 @@ public class Jugador : Actor {
 			GUI.Label (new Rect (desplazamientoJugador+i*25,10,30,30), corazon);
 
 	}
+
+	void pintaRupias(){
+		string textoRupia;
+
+		textoRupia = "" + rupias;
+
+		if (nJugador == 1) {
+			GUI.Label (new Rect (75, 550, 30, 30), rupia);
+			GUI.Label (new Rect (40, 550, 30, 30), textoRupia);
+		}
+	}
+
+	/*FIN DE FUNCIONES DE PINTADO*/
+
+	/*Funcion que carga todas las imagenes que se necesitaran en la clase de jugador, como pueden ser los corazones
+	 * para la vida o el contador de rupias*/
+	public void cargaImagenes(){
+		corazon = new Texture2D[5];
+		corazon[0] = (Texture2D)Resources.Load("corazon/corazonlleno");
+		corazon[1] = (Texture2D)Resources.Load("corazon/corazon34");
+		corazon[2] = (Texture2D)Resources.Load("corazon/corazonmedio");
+		corazon[3] = (Texture2D)Resources.Load("corazon/corazoncuarto");
+		corazon[4] = (Texture2D)Resources.Load("corazon/corazonvacio");
+		
+		rupia = (Texture2D)Resources.Load("rupia");
+	}
+
 
 }
