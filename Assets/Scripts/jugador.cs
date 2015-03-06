@@ -14,6 +14,8 @@ public class Jugador : Actor {
 	private static int rupias = 0;
 	private static int rupiasMax = 99;
 
+	Texture2D botones;
+
 	public void Start () {
 		base.Start ();
 		vidaMax = corazones*vidaCorazon;
@@ -52,6 +54,7 @@ public class Jugador : Actor {
 	void OnGUI(){
 		pintaCorazones();
 		pintaRupias();
+		pintaBotones();
 	}
 
 	/*Funcion que pinta todos los corazones los cuales representan la vida del jugador*/
@@ -105,13 +108,23 @@ public class Jugador : Actor {
 
 	void pintaRupias(){
 		string textoRupia;
-
 		textoRupia = "" + rupias;
+
+		GUIStyle estilo = new GUIStyle();
+
+		estilo.fontSize = 30;
 
 		if (nJugador == 1) {
 			GUI.Label (new Rect (75, 550, 30, 30), rupia);
-			GUI.Label (new Rect (40, 550, 30, 30), textoRupia);
+			GUI.Label (new Rect (40, 550, 30, 30), textoRupia,estilo);
 		}
+	}
+
+	void pintaBotones(){
+		if(nJugador==1)
+			GUI.Label (new Rect (300, 25, 75, 75), botones);
+		else
+			GUI.Label (new Rect (700, 25, 75, 75), botones);
 	}
 
 	/*FIN DE FUNCIONES DE PINTADO*/
@@ -127,6 +140,8 @@ public class Jugador : Actor {
 		corazon[4] = (Texture2D)Resources.Load("corazon/corazonvacio");
 		
 		rupia = (Texture2D)Resources.Load("rupia");
+
+		botones = (Texture2D)Resources.Load("botones");
 	}
 
 
