@@ -44,7 +44,10 @@ public class Jugador : Actor {
 		if (move [0] != 0 && move [1] != 0) 
 			speed = Mathf.Sqrt (Mathf.Pow (speed, 2) * 2) / 2;
 			
-		GetComponent<Rigidbody2D>().velocity = new Vector2 (move[0] * speed, move[1] * speed);
+		//if (Mathf.Abs (move [0]) > 0.4 || Mathf.Abs (move [1]) > 0.4)
+			GetComponent<Rigidbody2D> ().velocity = new Vector2 (move [0] * speed, move [1] * speed);
+		//else
+		//	GetComponent<Rigidbody2D> ().velocity = new Vector2 (0, 0);
 
 		return move;
 	}

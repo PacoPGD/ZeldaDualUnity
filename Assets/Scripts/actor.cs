@@ -5,16 +5,14 @@ public abstract class Actor : MonoBehaviour {
 
 	public int vidaMax;
 	protected int vida;
-
-	protected Animator anim;
-	protected int facing;
-	protected bool moving;
 	
+	protected Animator anim;
+	int facing = 2;
+	bool moving = false;
+
 	// Use this for initialization
 	public void Start () {
 		anim = this.GetComponent<Animator>();
-		moving = false;
-		facing = 2;
 	}
 	
 	// Update is called once per frame
@@ -33,13 +31,21 @@ public abstract class Actor : MonoBehaviour {
 
 
 	public void animacionMovimiento(float [] movimientoHecho){
+		if (Mathf.Abs (movimientoHecho [0]) > 0.4 || Mathf.Abs (movimientoHecho [1]) > 0.4)
+			moving = true;
+		else
+			moving = false;
+
 		//codigo para la animacion
-		moving = movimientoHecho[0] != 0 || movimientoHecho[1] != 0;
 		if (moving) {
-			if (movimientoHecho[1] > 0) facing = 8;
-			else if (movimientoHecho[1] < 0)facing = 2;
-			else if (movimientoHecho[0] > 0) facing = 6;
-			else facing = 4;
+			if(Mathf.Abs (movimientoHecho[0]) > Mathf.Abs (movimientoHecho[1])){
+				if (movimientoHecho[0] > 0) facing = 6;
+				else facing = 4;
+			}
+			else{
+				if (movimientoHecho[1] > 0) facing = 8;
+				else facing = 2;
+			}
 		}
 		
 		anim.SetBool("moving",moving);
