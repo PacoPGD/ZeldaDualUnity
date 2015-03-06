@@ -23,8 +23,9 @@ public class Enemigo : Actor {
 		base.Update ();
 	}
 
-	public override void movimiento () {
-		patrullar (); //El enemigo siempre esta patrullando, mas adelante incluire aqui formas de movimiento alternativas, como seguir al jugador.
+	public override float[] movimiento () {
+		float speed = 6;
+		return patrullar (speed); //El enemigo siempre esta patrullando, mas adelante incluire aqui formas de movimiento alternativas, como seguir al jugador.
 	}
 
 	/*void moverseHacia(float x, float y ) {
@@ -39,11 +40,11 @@ public class Enemigo : Actor {
 
 	}*/
 
-	void patrullar() {
+	public float[] patrullar(float speed) {
 		float [] move = {0,0}; //Por defecto no se mueve.
 		float actualX = getX ();
 		float actualY = getY ();
-		float speed = velocidad; //Utilizo una variable local en lugar de la global para poder modificar el valor sin alterar el original.
+
 
 		//Si el enemigo llega a la posicion de destino, cambio una por otra las posiciones de origen y destino.
 		//De esta forma, el enemigo siempre esta patrullando en una direccion u otra.
@@ -84,6 +85,6 @@ public class Enemigo : Actor {
 		
 		GetComponent<Rigidbody2D>().velocity = new Vector2 (move[0] * speed, move[1] * speed); //Realizo el movimiento
 
-		movimientoHecho = move;
-	}
+		return move;
+	}	
 }
